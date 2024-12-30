@@ -6,6 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "apply_rebate",
   "customer_fund_source",
   "description"
  ],
@@ -20,11 +21,17 @@
    "fieldtype": "Data",
    "label": "Customer Fund Source",
    "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "apply_rebate",
+   "fieldtype": "Check",
+   "label": "Apply Rebate?"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-06 16:00:32.641363",
+ "modified": "2024-12-27 16:29:56.465922",
  "modified_by": "Administrator",
  "module": "It Intan Pariwara",
  "name": "Customer Fund Source",
