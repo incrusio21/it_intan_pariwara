@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-05 10:46:42.725214",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_o5cg",
+  "nomor_order",
+  "customer_code",
+  "subdistrict_code_kode_kecamatan",
+  "store_code_kode_ben",
+  "sku",
+  "qty",
+  "price",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_o5cg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "nomor_order",
+   "fieldtype": "Autocomplete",
+   "in_list_view": 1,
+   "label": "Nomor Order",
+   "link_filters": "[[\"Territory\",\"custom_territory_type\",\"=\",\"Kabupaten\"]]",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_code",
+   "fieldtype": "Data",
+   "label": "Customer Code"
+  },
+  {
+   "fieldname": "subdistrict_code_kode_kecamatan",
+   "fieldtype": "Data",
+   "label": "Subdistrict Code (Kode Kecamatan)"
+  },
+  {
+   "fieldname": "sku",
+   "fieldtype": "Data",
+   "label": "SKU"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "label": "QTY"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "label": "Price"
+  },
+  {
+   "fieldname": "store_code_kode_ben",
+   "fieldtype": "Data",
+   "label": "Store Code (Kode Ben)"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Siplah Order",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-03-18 11:06:26.510569",
+ "modified_by": "Administrator",
+ "module": "It Intan Pariwara",
+ "name": "Siplah Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
